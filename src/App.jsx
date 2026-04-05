@@ -4,7 +4,7 @@ import './App.css';
 const portfolioData = {
   "name": "Sameer Giri",
   "title": "Backend Developer",
-  "location": "Kathmandu, Nepal",
+  "location": "Jhapa, Nepal",
   "about": "Backend-focused developer currently working independently on local freelance projects, building real-world software solutions. I specialize in APIs, database design, and system architecture, and I’m currently developing a School Management System. I enjoy understanding how things work under the hood and applying that knowledge to build reliable and scalable applications.",
   "mindset": [
     "I focus on understanding the 'why' behind systems, not just implementation.",
@@ -60,9 +60,8 @@ const portfolioData = {
     "Continuously improve problem-solving ability"
   ],
   "contact": {
-    "email": "your-email@example.com",
-    "github": "https://github.com/yourusername",
-    "linkedin": "https://linkedin.com/in/yourprofile"
+    "email": "sameergiri153000@gmail.com",
+    "github": "https://github.com/sameergiri69"
   }
 };
 
@@ -80,10 +79,9 @@ function App() {
           <h1>{portfolioData.name}</h1>
           <p className="title">{portfolioData.title}</p>
           <div className="hero-cta">
-            <a href={`mailto:${portfolioData.contact.email}`} className="btn">Get in Touch</a>
+            <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${portfolioData.contact.email}`} target="_blank" rel="noopener noreferrer" className="btn">Get in Touch</a>
             <div className="social-links">
               <a href={portfolioData.contact.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href={portfolioData.contact.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
           </div>
         </div>
