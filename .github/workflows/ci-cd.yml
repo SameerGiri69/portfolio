@@ -25,7 +25,7 @@ jobs:
       # 3. Install necessary project dependencies (node_modules)
       - name: Install dependencies
         run: npm install
-        working-directory: ./portfolio
+        working-directory: .
 
       # 4. Run the Vite build to ensure there are no compilation errors
       - name: Build application
