@@ -30,8 +30,8 @@ jobs:
       # 4. Run the Vite build to ensure there are no compilation errors
       - name: Build application
         run: npm run build
-        working-directory: ./portfolio
+        working-directory: .
 
       # 5. Build the Docker image to make sure the Dockerfile is still valid
       - name: Verify Docker build
-        run: docker build -t portfolio-site ./portfolio
+        run: docker build -t portfolio-site .
