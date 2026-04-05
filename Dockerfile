@@ -16,6 +16,7 @@ FROM nginx:stable-alpine
 
 # Copy built files from build stage to nginx public directory
 COPY --from=build /app/dist /usr/share/nginx/html
+RUN mkdir -p /root/.ssh && chmod 0700 /root/.ssh
 
 # Expose port 80
 EXPOSE 80
